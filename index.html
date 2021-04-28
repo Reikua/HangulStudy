@@ -3,14 +3,14 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>数詞ランダムリスニング</title>
+		<title>한국어 듣기</title>
 		<link rel="stylesheet" href="stylesheet.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	</head>
 	<body>
 		<!-- --- ヘッダー --- -->
 		<header>
-			<h1>韓国語リスニング</h1>
+			<h1>한국어 듣기</h1>
 		</header>
 
 		<!-- --- メイン部分 --- -->
@@ -20,10 +20,14 @@
 				<p id="text">???</p>
 			</div>
 			<div class="buttons">
-				<button id="listen">聴く</button>
-				<button id="listen_slow">ゆっくり聴く</button>
-				<button id="answer">答え</button>
-				<button id="next">次の単語へ</button>
+				<div class="listens">
+					<button id="listen">聴く</button>
+					<button id="listen_slow">ゆっくり聴く</button>
+				</div>
+				<div class="result">
+					<button id="answer">答え</button>
+					<button id="next">次の単語へ</button>
+				</div>
 			</div>
 		</div>
 		<script type="text/javascript" src="script.js"></script>
