@@ -38,6 +38,8 @@ $('#listen_slow').click(function() {
 * 問題の答えを表示する関数
 -------------------------------------------------- */
 $('#answer').click(function() {
+  $(this).hide();
+  $('#next').show();
   $('#text').text(rand);
 });
 
@@ -45,6 +47,8 @@ $('#answer').click(function() {
 * 次の問題へ移動する関数
 -------------------------------------------------- */
 $('#next').click(function() {
+  $(this).hide();
+  $('#answer').show();
   $('#text').text('???');
   rand = Math.floor(Math.random() * 100);
 });
