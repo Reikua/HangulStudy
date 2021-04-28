@@ -140,6 +140,26 @@ div.main div.buttons {
   margin: 0 auto;
 }
 
+div.main div.buttons div button {
+  width: 100%;
+  max-width: 300px;
+  height: 60px;
+  margin: 5px 0;
+  background-color: #333333;
+  border-radius: 5px;
+  border: 3px solid #666666;
+  color: #FFF;
+}
+
+div.main div.buttons div button:hover {
+  background-color: rgba(51, 51, 51, 0.9);
+  cursor: pointer;
+}
+
+div.main div.buttons div button:active {
+  background-color: #333333;
+}
+
 div.main div.buttons div.listens {
   display: flex;
   justify-content: space-between;
@@ -164,25 +184,5 @@ div.main div.buttons div.result button#answer, div.main div.buttons div.result b
 
 div.main div.buttons div.result button#next {
   display: none;
-}
-
-div.main div.buttons button {
-  width: 100%;
-  max-width: 300px;
-  height: 60px;
-  margin: 5px 0;
-  background-color: #333333;
-  border-radius: 5px;
-  border: 3px solid #666666;
-  color: #FFF;
-}
-
-div.main div.buttons button:hover {
-  background-color: rgba(51, 51, 51, 0.9);
-  cursor: pointer;
-}
-
-div.main div.buttons button:active {
-  background-color: #333333;
 }
 /*# sourceMappingURL=stylesheet.css.map */
