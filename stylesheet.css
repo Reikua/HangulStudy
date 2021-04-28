@@ -96,6 +96,8 @@ body {
 -------------------------------------------------- */
 header {
   width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 header h1 {
@@ -108,6 +110,12 @@ header h1 {
 /* ------------------------------------------------
 * メイン部分
 -------------------------------------------------- */
+div.main {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
 div.main div.num_box {
   position: relative;
   width: 200px;
@@ -129,12 +137,39 @@ div.main div.num_box p {
 div.main div.buttons {
   display: flex;
   flex-flow: column;
-  width: 90%;
-  max-width: 300px;
   margin: 0 auto;
 }
 
+div.main div.buttons div.listens {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.main div.buttons div.listens button {
+  width: 50%;
+}
+
+div.main div.buttons div.listens button:first-child {
+  margin-right: 5px;
+}
+
+div.main div.buttons div.result {
+  position: relative;
+}
+
+div.main div.buttons div.result button#answer, div.main div.buttons div.result button#next {
+  position: absolute;
+  top: 0;
+}
+
+div.main div.buttons div.result button#next {
+  display: none;
+}
+
 div.main div.buttons button {
+  width: 100%;
+  max-width: 300px;
+  height: 40px;
   margin: 5px 0;
   background-color: #333333;
   border-radius: 5px;
