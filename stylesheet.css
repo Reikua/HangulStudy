@@ -126,12 +126,22 @@ div.main div.num_box img {
   width: 200px;
 }
 
-div.main div.num_box p {
+div.main div.num_box div.text {
   position: absolute;
   top: 38%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+div.main div.num_box div.text p#text {
   font-size: 40px;
+  text-align: center;
+  line-height: 1;
+}
+
+div.main div.num_box div.text span#text_hangul {
+  font-size: 20px;
+  text-align: center;
 }
 
 div.main div.buttons {
