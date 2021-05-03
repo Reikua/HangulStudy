@@ -49,21 +49,30 @@ function rand_num() {
 /* ------------------------------------------------
 * 問題の音声を読み上げる関数
 -------------------------------------------------- */
-$('.listen').click(function() {
-  if ($(this).attr('name') === 'chinese') {
-    var selected_voice = selected_chinese_num;
-  } else if ($(this).attr('name') === 'unique') {
-    var selected_voice = selected_unique_num;
-  }
-
+$('.listen_chinese').click(function() {
   let uttearnce = new SpeechSynthesisUtterance();
-  uttearnce.text = selected_voice;
+  uttearnce.text = selected_chinese_num;
   uttearnce.volume = 1;
   uttearnce.rate = $(this).attr('value');
   uttearnce.pitch = 1;
   uttearnce.lang = 'ko-KR'
   window.speechSynthesis.speak(uttearnce);
 });
+
+
+/* ------------------------------------------------
+* 問題の音声を読み上げる関数
+-------------------------------------------------- */
+$('.listen_unique').click(function() {
+  let uttearnce = new SpeechSynthesisUtterance();
+  uttearnce.text = selected_unique_num;
+  uttearnce.volume = 1;
+  uttearnce.rate = $(this).attr('value');
+  uttearnce.pitch = 1;
+  uttearnce.lang = 'ko-KR'
+  window.speechSynthesis.speak(uttearnce);
+});
+
 
 /* ------------------------------------------------
 * 問題の答えを表示する関数
