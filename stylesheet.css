@@ -192,10 +192,6 @@ div.main div.buttons div.listens button:nth-of-type(3), div.main div.buttons div
   background-color: #380000;
 }
 
-div.main div.buttons div.listens button:hover {
-  opacity: 0.8;
-}
-
 div.main div.buttons div.result {
   position: relative;
 }
